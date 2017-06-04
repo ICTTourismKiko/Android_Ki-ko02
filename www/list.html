@@ -1,0 +1,40 @@
+<ons-page  id="list">
+
+    <!--ナビゲーションバーの記述 -->  
+    <ons-toolbar>
+        <div class="center">スポット一覧</div>
+            <div class="left"><ons-back-button>戻る</ons-back-button></div>
+    </ons-toolbar>
+    
+    <!--リストの記述 -->  
+    <ons-list>
+        <ons-list-item ng-repeat='i in [0, 1, 2, 3]' modifier="chevron" onclick="Push_to_Map()" class="item">
+            <ons-row>
+                <ons-col width="150px">
+                    <a href="#" onclick="Push_to_detail_picture();">
+                        <img src="picture/ki-ko.jpg" class="item-thum">
+                    </a>
+                </ons-col>
+                <ons-col>
+                    <header>
+                        <span class="item-title">キーコに会える</span>
+                    </header>
+                    <p class="item-desc">古内町の公式キャラクターキーコだよぉ(≧▽≦)
+                    東京青山の｢寛斎スーパースタジオ｣生まれの都会派キャラ！
+                    木古内特産はこだて和牛(赤牛)をモチーフにしてるから赤いんだぁ♪
+                    ｢木古内駅新幹線観光駅長｣としてみんなをお出迎えします！ </p>
+                </ons-col>
+            </ons-row>
+            <a href="#" onclick="Push_to_camera();">
+                <ons-icon icon="fa-camera" size="30px"></ons-icon>
+            </a>
+            <a href="#" onclick="Push_to_edit();">
+                <ons-icon icon="fa-pencil-square-o" size="30px"></ons-icon>
+            </a>
+            <a href="#" onclick="Push_to_edit();">
+                <ons-icon icon="fa-twitter" size="30px"></ons-icon>
+            </a>
+        </ons-list-item>
+    </ons-list>
+    
+</ons-page>

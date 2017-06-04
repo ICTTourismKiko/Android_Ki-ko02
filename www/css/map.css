@@ -1,0 +1,25 @@
+#map_canvas{
+    width: 100vw;
+    height: 500px;
+}
+
+.map_picture{
+    width: 140px; /* 写真の横の大きさ */
+    height: 190px; /* 写真の縦の大きさ */
+    border-radius: 4px; /* 角を丸くする */
+    margin: 10px 0px 0px 10px; /* カードの余白の大きさ[上][右][下][左]の順  */
+}
+
+.map_item-title{
+    font-size: 15px;  /* タイトルの字の大きさ　*/
+    font-weight: 500;  /*　タイトルの字の太さ */
+    margin: 10px 0 0 10px;
+}
+
+.map_item-desc{
+    font-size: 14px; /* 説明の字の大きさ　*/
+    color: #600; /* 説明の字の色　*/
+    line-height: 1.3; /* フォントの大きさ＋上下の余白 */
+    margin: 0px 0 0 0; /* カードの余白の大きさ[上][右][下][左]の順  */
+    padding: 10px 10px 0 10px; /* カードの余白の大きさ[上][右][下][左]の順  */
+}

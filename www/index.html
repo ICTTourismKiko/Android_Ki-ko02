@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="lib/onsenui/js/angular-onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    ons.bootstrap()
+      .controller('HelloController', function() {
+        this.world = 'World';
+      });
+    ons.ready(function() {
+      console.log("Onsen UI is ready!");
+    });
+  </script>
+  
+  <script>
+    angular.module('myApp', ['onsen.directives']);   
+ </script>
+ 
+ <script src="js/app.js"></script>
+ <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBT4ccFj4zBx7Swj2gQvIWty5lFAsQT1Og&sensor=True"
+            type="text/javascript"
+            charset="UTF-8"></script>
+  <script src="js/map.js"></script>
+  <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="css/list.css">
+  <link rel="stylesheet" href="css/detail_picture.css">
+   
+</head>
+<body>
+  <ons-navigator id="navi" page="top.html"></ons-navigator>
+</body>
+
+</html>
