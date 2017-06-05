@@ -22,9 +22,11 @@ document.addEventListener('init', function(event) {
               mapOptions         // マップオプション
             );
             //　マップにマーカーを表示する(現在地)
+            var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
             var here_marker = new google.maps.Marker({
               map : map,             // 対象の地図オブジェクト
-              position : mapLatLng   // 緯度・経度
+              position : mapLatLng ,  // 緯度・経度
+              icon: image
             });
             
             //　マップにマーカーを表示する(観光スポット)
