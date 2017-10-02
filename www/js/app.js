@@ -17,3 +17,9 @@ function Push_to_edit() {
 function Push_to_detail_picture() {
     document.getElementById("navi").pushPage("detail_picture.html");
 }
+function Push_to_leaf_select() {
+    document.getElementById("navi").pushPage("leaf_select.html");
+}
+function Push_to_twitter() {
+    document.getElementById("navi").pushPage("twitter.html");
+}
