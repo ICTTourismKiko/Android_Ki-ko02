@@ -35,7 +35,6 @@ document.addEventListener('init', function(event) {
               map : map,             // 対象の地図オブジェクト
               position : here_latlng, // 緯度・経度
             });
-            
           },
           // 取得失敗した場合
           function(error) {
